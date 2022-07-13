@@ -1,0 +1,26 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view>
+    姓名：<input type="text" name="name" placeholder="请输入姓名" class="border_style" confirm-type="done" />
+    学号：<input type="number" name="study_id" placeholder="请输入学号" maxlength="10" class="border_style" />
+    性别：
+    <radio-group name="sex">
+      <label><radio value="男"/>男</label>
+      <label><radio value="女"/>女</label>
+    </radio-group>
+    身体状况：
+    <checkbox-group name="heath">
+      <label><checkbox value="fs"/>是否发烧</label>
+      <label><checkbox value="ks"/>是否咳嗽</label>
+      <label><checkbox value="fx"/>是否腹泻</label>
+    </checkbox-group>
+    是否申请健康码：<switch name="QR"/>
+    <view>体温：<slider name="temperature" min="34" max ="42" step="0.1" show-value ></slider></view>
+  </view>
+  
+  <view class="btn_start">
+  <view class="btn-area">
+    <button formType="submit"><view>提交</view></button>
+    <button formType="reset"><view>重置</view></button>
+  </view>
+  </view>
+</form>

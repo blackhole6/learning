@@ -1,0 +1,41 @@
+<!--pages/main/main.wxml-->
+<view class="contain">
+ 
+<view class='select'>
+  <text>选择功能</text>
+</view>
+
+<view class='function'>
+  <view class='function_facedetect'>
+    <view  class='facedetect_image'>
+      <image style='width:150px;height:120px;' src='../image/face_detection.jpg'></image>
+    </view>
+    <view  class='btn_facedetect'  bindtap='go_face_detect'>
+      <text>人脸检测</text>
+    </view>
+  </view>
+
+<view class='function_facedetect'>
+    <view  class='facedetect_image'>
+      <image style='width:150px;height:120px;' src='../image/face_recognition.jpg'></image>
+    </view>
+    <view  class='btn_facedetect'  bindtap='go_face_recognition'>
+      <text>人脸识别</text>
+    </view>
+  </view>
+</view>
+
+<view class='function_facedetect'>
+    <view  class='facedetect_image'>
+      <image style='width:150px;height:120px;' src='../image/face_recognition.jpg'></image>
+    </view>
+    <view  class='btn_facedetect'  bindtap='go_face_landmark'>
+      <text>人脸关键点</text>
+    </view>
+  </view>
+
+<view class="contact">
+<text>第一次使用需要先进行人脸注册</text>
+</view>
+
+ </view>
